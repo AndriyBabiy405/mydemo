@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+}
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 20px;
+}
+.prediction {
+    min-height: 100vh;
+}
+.prediction__body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.prediction__container {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.prediction__content {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+.prediction__title {
+    font-size: 40px;
+    margin: 30px;
+    color: #fff;
+}
+.prediction__images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+.images-prediction__item {
+    position:absolute;
+    width: 110%;
+    height: 125%;
+    top: -20%;
+    left: -5%;
+}
+.images-prediction__clouds { 
+    background: url("../img/Clouds_1.jpg") top / cover no-repeat;
+    top: -10%;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+.images-prediction__mountains {
+    background: url("../img/mountains2.png") top / cover no-repeat;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+}
+.prediction-weather__content {
+    display: flex;
+    justify-content: center;
+}
+.prediction-weather__column {
+    padding: 20px ;
+    flex: 0 1 500px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+.prediction-weather__input {
+    display: block;
+    margin: 20px auto;
+}
+.prediction__select {
+    height: 40px;
+    padding-left: 20px;
+    border: solid 2px #fff;
+    color: #000;
+    background-color:rgba(0,0,0,0);
+    border-radius: 5px;
+    margin: 30px;
+}
+.prediction-weather__info_city-name {
+    margin: 10px;
+    font-size: 20px;
+}
+.prediction-weather__info-degrees {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+.prediction-weather__info-button {
+    margin-top: 20px;
+    padding: 10px 60px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color:rgba(0,0,0,0);
+}
